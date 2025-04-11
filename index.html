@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa do Construtor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100%;
+            background-color: #004d8e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-box {
+            width: auto;
+            height: 100%;
+            max-height: 100%;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .primeira-imagem {
+            margin-top: 100px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .primeira-imagem img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            text-align: right;
+            color: #fff;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .capta-zap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8c8c8c;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+            gap: 40px;
+            border: 25px solid #ffc72c;
+            /* contorno amarelo */
+            border-radius: 12px;
+            /* opcional */
+        }
+
+        .container-capta-zap {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            max-width: 500px;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .container-capta-zap .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .frase-impacto h2 {
+            font-size: 2rem;
+            line-height: 1.4;
+            font-weight: bold;
+            color: #ffc72c;
+            /* amarelo ouro */
+        }
+
+        .descricao-impacto h2 {
+            font-size: 1.2rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .botao-zap {
+            margin-top: 10px;
+            display: flex;
+            background-color: #25D366;
+            border-radius: 10px;
+        }
+
+        .fale-consultor {
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .imagem-construtor img {
+            width: 320px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .capta-zap {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .imagem-construtor img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-box">
+                <img fetchpriority="high" decoding="async" width="80" height="80" src="img/logo.png"
+                    class="attachment-large size-large wp-image-29" alt="">
+            </div>
+        </div>
+        <div class="contact-info">
+            <div>📞 (99) 9999-9999</div>
+            <div>✉️ contato@casadoconstrutor.com</div>
+        </div>
+    </header>
+
+    <div class="primeira-imagem">
+        <img src="img/outdoor 01 - 70 equipamentos.jpg" alt="Outdoor com 70 equipamentos">
+    </div>
+
+    <div class="capta-zap">
+        <div class="container-capta-zap">
+            <div class="logo">
+                <img fetchpriority="high" decoding="async" width="100" height="100" src="img/logo.png" />
+            </div>
+            <div class="frase-impacto">
+                <h2>Alugar um equipamento <br> nunca foi tão fácil!</h2>
+            </div>
+            <div class="descricao-impacto">
+                <h2>Temos mais de 70 tipos de equipamentos! <br>
+                    Clique no botão abaixo e confira agora!
+                </h2>
+            </div>
+            <div class="botao-zap">
+                <div class="fale-consultor">
+                    <a href="https://wa.me/5599999999999" target="_blank"><img src="img/zap bco.png" alt="WhatsApp" width="50" height="50" />Fale com um Consultor</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagem-construtor">
+            <img src="img/imagem-construtor.png" alt="Imagem Construtor" />
+        </div>
+    </div>
+
+</body>
+
+</html>
